@@ -2,13 +2,16 @@
 # Licensed to PSF under a Contributor Agreement.
 # See http://www.python.org/psf/license for licensing details.
 
+from __future__ import absolute_import
+
 __author__ = "Sorin Sbarnea"
 __copyright__ = "Copyright 2010-2013, Sorin Sbarnea"
 __email__ = "sorin(dot)sbarnea(at)gmail.com"
 __status__ = "Production"
-from version import __version__, __date__
 
-from confluence import Confluence
+from confluence.version import __version__, __date__
+
+from confluence.confluence import Confluence
 
 __all__ = ['confluence']
 
